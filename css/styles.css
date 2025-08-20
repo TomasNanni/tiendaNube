@@ -1,0 +1,109 @@
+:root{
+    --primary-color:#0050c3;
+}
+
+/*clase usada para contener con color solido primario azul*/
+.seccion-ancho-completo-primary{
+    background-color: var(--primary-color);
+    margin-top: auto;
+    display: flex;
+}
+
+#seccion2{
+    background-color: white;
+}
+
+.container {
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+h1{
+    font-size: 42px;
+}
+
+h2{
+    font-size: 21px;
+}
+
+nav{
+    display: flex;
+}
+
+.derechaMargen{
+    position: absolute;
+    right: 0;
+    padding: 2em;
+}
+
+.imgResponsiva{
+    width: 40vw;
+    max-width: 80%; 
+    height: auto; 
+    display: block;
+}
+
+.LoginTiendaGratis{
+    width: fit-content;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    font-family: 'Plus Jakarta Sans',"Helvetica Neue",arial,sans-serif;
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+.iconosRedesSociales{
+    display: inline;
+    margin: 1rem;
+}
+
+#seccion1{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+.botonCrearTiendaGratis{
+    color: white;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 100;
+    text-align: center;
+    font-weight: 600;
+}
+
+#botonBlanco{
+    color: var(--primary-color);
+    background-color: white;
+}
+
+#linkPoliticas{
+    text-decoration: none;
+    color: #c5c7c8;
+}
+
+.iconos{
+    padding: 2em;
+}
+
+#linkPoliticas:hover{
+    color: white;
+}
