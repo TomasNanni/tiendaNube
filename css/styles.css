@@ -1,25 +1,35 @@
-:root{
-    --primary-color:#0050c3;
+:root {
+    --primary-color: #0050c3;
 }
 
 /*clase usada para contener con color solido primario azul*/
-.seccion-ancho-completo-primary{
+.seccion-ancho-completo-primary {
     background-color: var(--primary-color);
 }
 
-#seccion2{
+#seccion2 {
     background-color: white;
 }
 
-.container {
-    width: 100%;
-    padding-right: calc(var(--bs-gutter-x) * .5);
-    padding-left: calc(var(--bs-gutter-x) * .5);
-    margin-right: auto;
-    margin-left: auto;
+.navItems{
+    height: 40px;
+    fill: white;
 }
 
-#header{
+
+#login{
+    padding: 10px;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: baseline;
+}
+
+#header {
     position: absolute;
     top: 0;
     left: 0;
@@ -27,64 +37,69 @@
     height: 88px;
 }
 
-h1{
+h1 {
     font-size: 42px;
 }
 
-h2{
+h2 {
     font-size: 21px;
 }
 
-nav{
+nav {
     display: flex;
+    justify-content: space-around;
+    div{
+        padding: 25px;
+    }
 }
 
-.derechaMargen{
+.derechaMargen {
     position: absolute;
     right: 0;
     padding: 2em;
 }
 
-.imgResponsiva{
+.imgResponsiva {
     width: 40vw;
-    max-width: 80%; 
-    height: auto; 
+    max-width: 80%;
+    height: auto;
     display: block;
 }
 
-#LoginTiendaGratis{
+#LoginTiendaGratis {
     width: fit-content;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     height: auto;
     min-height: 100vh;
-    font-family: 'Plus Jakarta Sans',"Helvetica Neue",arial,sans-serif;
+    font-family: 'Plus Jakarta Sans', "Helvetica Neue", arial, sans-serif;
     overflow-y: auto;
     max-height: 100vh;
     margin-top: 88px;
 }
 
-.iconosRedesSociales{
+.iconosRedesSociales {
     display: inline;
     margin: 1rem;
 }
 
-#seccion1{
+#seccion1 {
     color: white;
 }
 
 
-.botonCrearTiendaGratis{
+.botonCrearTiendaGratis {
     background-color: var(--primary-color);
     color: white;
-    text-decoration: none;
-    border: 10px solid transparent;
-    border-radius: 100px;
+    border: 1px solid transparent;
+    border-radius: 300px;
     text-align: center;
     font-weight: 600;
+    padding: 10px;
+    transition: all 0.3s ease;
 }
 
 #botonBlanco{
@@ -92,15 +107,17 @@ body{
     background-color: white;
 }
 
-#linkPoliticas{
+#botonBlanco:hover{
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px white  solid;
+}
+
+#linkPoliticas {
     text-decoration: none;
     color: #c5c7c8;
 }
 
-.iconos{
-    padding: 2em;
-}
-
-#linkPoliticas:hover{
+#linkPoliticas:hover {
     color: white;
 }
