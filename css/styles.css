@@ -5,8 +5,6 @@
 /*clase usada para contener con color solido primario azul*/
 .seccion-ancho-completo-primary{
     background-color: var(--primary-color);
-    margin-top: auto;
-    display: flex;
 }
 
 #seccion2{
@@ -22,10 +20,11 @@
 }
 
 #header{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
+    height: 88px;
 }
 
 h1{
@@ -53,7 +52,7 @@ nav{
     display: block;
 }
 
-.LoginTiendaGratis{
+#LoginTiendaGratis{
     width: fit-content;
 }
 
@@ -65,6 +64,7 @@ body{
     font-family: 'Plus Jakarta Sans',"Helvetica Neue",arial,sans-serif;
     overflow-y: auto;
     max-height: 100vh;
+    margin-top: 88px;
 }
 
 .iconosRedesSociales{
@@ -76,16 +76,13 @@ body{
     color: white;
 }
 
-p{
-    color: white;
-}
 
 .botonCrearTiendaGratis{
-    color: white;
     background-color: var(--primary-color);
+    color: white;
     text-decoration: none;
-    border: 1px solid transparent;
-    border-radius: 100;
+    border: 10px solid transparent;
+    border-radius: 100px;
     text-align: center;
     font-weight: 600;
 }
