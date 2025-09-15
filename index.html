@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tienda gratis - Tiendanube</title>
-  <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="/css/styles.css" />
   <script src="./script.js" defer></script>
   <link rel="shortcut icon" href="./imagenes/favicon.png" type="image/x-icon" />
@@ -51,7 +50,7 @@
         <h1>¡Creá tu tienda online gratis y en minutos!</h1>
         <h2>Configuración simple. Sin costo mensual ni costo por transacción.</h2>
         <div id="divInput">
-          <input type="text" nape="Ingresa mail"  placeholder="nombre@ejemplo.com">
+          <input type="text" nape="Ingresa mail" id="input" placeholder="nombre@ejemplo.com">
           <button class="botonCrearTiendaGratis">
             Crear tienda gratis
           </button>
@@ -99,7 +98,7 @@
         </li>
         <li class="tarjetaBlanca">
           <span>
-            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
               <path
                 d="m9.539.613-3.9 14.55 1.209.324L10.746.937 9.54.612zm-5.63 3.434L.598 7.137a1.24 1.24 0 0 0 0 1.821l3.25 3.091.921-.85-3.321-3.15 3.321-3.112zm11.893 3.091-3.31-3.091-.861.91 3.32 3.091-3.32 3.111.92.85 3.251-3.05a1.24 1.24 0 0 0 0-1.821">
               </path>
@@ -113,19 +112,19 @@
     </div>
   </section>
   <!-- Seccion 3 con la img y lista -->
-  <section>
-    <div>
+  <section class="seccion-ancho-completo-secondary">
+    <div class="containerCenterText">
       <h1>100% gratis para siempre</h1>
     </div>
-    <span>
+    <div class="containerCenter">
       <div>
-        <img src="./imagenes/imagenPantallas.webp" alt="Demonstración de tu propia página">
+        <img src="./imagenes/imagenPantallas.webp" width="523px" height="544px" alt="Demonstración de tu propia página">
       </div>
-      <div>
+      <div id="listaVentajas">
         <h2>¿Por qué elegir el Plan Inicial?</h2>
         <ul>
           <li class="container">
-            <span>
+            <span class="circuloCeleste">
               <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="m15.12 2.23-9.79 9.78L.88 7.56 0 8.44l5.33 5.34L16 3.11z"></path>
               </svg>
@@ -135,7 +134,7 @@
             </span>
           </li>
           <li class="container">
-            <span>
+            <span class="circuloCeleste">
               <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="m15.12 2.23-9.79 9.78L.88 7.56 0 8.44l5.33 5.34L16 3.11z"></path>
               </svg>
@@ -145,7 +144,7 @@
             </span>
           </li>
           <li class="container">
-            <span>
+            <span class="circuloCeleste">
               <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="m15.12 2.23-9.79 9.78L.88 7.56 0 8.44l5.33 5.34L16 3.11z"></path>
               </svg>
@@ -155,7 +154,7 @@
             </span>
           </li>
           <li class="container">
-            <span>
+            <span class="circuloCeleste">
               <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="m15.12 2.23-9.79 9.78L.88 7.56 0 8.44l5.33 5.34L16 3.11z"></path>
               </svg>
@@ -165,7 +164,7 @@
             </span>
           </li>
           <li class="container">
-            <span>
+            <span class="circuloCeleste">
               <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="m15.12 2.23-9.79 9.78L.88 7.56 0 8.44l5.33 5.34L16 3.11z"></path>
               </svg>
@@ -178,7 +177,7 @@
         <a class="botonCrearTiendaGratis" href="https://www.tiendanube.com/crear-mi-tienda-online">Crear tienda
           gratis</a>
       </div>
-    </span>
+    </div>
   </section>
   <!-- Seccion 4 azul con tarjetas -->
   <section class="seccion-ancho-completo-primary">
@@ -213,26 +212,26 @@
       </div>
   </section>
   <!-- Seccion 5 con ventajas de tiendaNube -->
-  <section>
-    <div>
+  <section class="seccion-ancho-completo-secondary">
+    <div class="containerCenterText">
       <h1>¡Te acompañamos a potenciar tu negocio!</h1>
     </div>
-    <div>
-      <ul>
-        <li>
+    <div class="containerSpaceAround">
+      <ul class="listaTarjeta">
+        <li class="tarjetaBlanca">
           <p>Desarrollá canales de venta</p>
           <h2>Conocé todo sobre cómo hacer publicidad en Instagram</h2>
-          <a href="https://www.tiendanube.com/blog/publicidad-en-instagram/">Ver más</a>
+          <a class="linksEstandares" href="https://www.tiendanube.com/blog/publicidad-en-instagram/">Ver más</a>
         </li>
-        <li>
+        <li class="tarjetaBlanca">
           <p>Generá ingresos extra</p>
           <h2>¿Querés ganar más dinero por internet? Mirá esta guía completa</h2>
-          <a href="https://www.tiendanube.com/blog/ganar-dinero-por-internet/">Ver más</a>
+          <a class="linksEstandares" href="https://www.tiendanube.com/blog/ganar-dinero-por-internet/">Ver más</a>
         </li>
-        <li>
+        <li class="tarjetaBlanca">
           <p>Tutoriales y recursos</p>
           <h2>Seguí el paso a paso para crear tu propia Tiendanube</h2>
-          <a href="https://www.tiendanube.com/blog/hacer-tiendanube/">Ver más</a>
+          <a class="linksEstandares" href="https://www.tiendanube.com/blog/hacer-tiendanube/">Ver más</a>
         </li>
       </ul>
     </div>
@@ -240,7 +239,7 @@
   <!-- Seccion 6 con img y texto -->
   <section>
     <div>
-      <img src="./imagenes/imgSenora.webp" alt="Foto de señora feliz llevando a cabo su emprendimiento">
+      <img height="382" width="523" src="./imagenes/imgSenora.webp" alt="Foto de señora feliz llevando a cabo su emprendimiento">
     </div>
     <div>
       <h2>Mostrale al mundo lo que sos capaz de hacer.</h2>
