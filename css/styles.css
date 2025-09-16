@@ -57,7 +57,7 @@ a{
     background-color: var(--primary-color);
     width: 100%;
     box-sizing: border-box;
-    padding-bottom: 55px;
+    padding-bottom: 2.5em;
 
     * {
         color: white;
@@ -68,11 +68,7 @@ a{
     background-color: var(--secondary-color);
     width: 100%;
     box-sizing: border-box;
-    padding-bottom: 50px;
-}
-
-#seccion2 {
-    background-color: white;
+    padding-bottom: 2.5em;
 }
 
 .navItems {
@@ -110,6 +106,10 @@ a{
 
     h2{
         font-size: 21px;
+    }
+
+    h3{
+        font-size: 14px;
     }
 
     * {
@@ -158,9 +158,6 @@ a{
     align-content: center;
     align-items: center;
     justify-content:center;
-    div{
-        padding: 30px;
-    }
 }
 
 .containerCenterText {
@@ -173,17 +170,31 @@ a{
     font-weight: bold;
 }
 
+.seccion6{
+    *{
+        padding: 30px;
+    }
+    a{
+        margin-left: 2em;
+    }
+    h2{
+        font-weight: bold;
+    }
+    p{
+        font-size: 18px;
+        padding-top: 10px;
+    }
+}
+
+
 .tarjetaBlanca {
     border: 1px solid lightblue;
-    min-width: 200px;
     border-radius: 12px;
     padding: 1px 14px;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     max-width: 300px;
     text-align: left;
-    height: auto;
-    min-width: 412px;
+    min-width: 400px;
     min-height: 275px;
     svg{
         width: 32px;
@@ -192,19 +203,25 @@ a{
     }
 
     * {
-        padding: 15px 5px;
+        padding: 15px 5px 15px 7px;
     }
 
     h2 {
         margin-bottom: 4px;
         font-weight: bold;
         color: #343537;
+        font-size: 24px;
     }
 
     p {
         color: #343537;
         line-height: 1.5;
         margin: 0;
+    }
+
+    a{
+        display: inline-block;
+        margin-top: 6em;
     }
 }
 
@@ -231,7 +248,7 @@ a{
   justify-content: center;
 }
 
-#listaVentajas{
+.listaVentajas{
     li{
         gap: 10px;
         padding: 8px 8px 8px 8px;
@@ -269,23 +286,19 @@ h1 {
 }
 
 h2 {
+    font-size: 32px;
+}
+
+h3{
     font-size: 24px;
 }
 
 nav {
     display: flex;
     justify-content: space-around;
-
     div {
         padding: 25px;
     }
-}
-
-.imgResponsiva {
-    width: 40vw;
-    max-width: 80%;
-    height: auto;
-    display: block;
 }
 
 #LoginTiendaGratis {
@@ -337,15 +350,23 @@ body {
     background-color: white;
 }
 
+#textoSeccion7{
+    display: flex;
+    align-items: flex-start;
+    h2{
+        margin-top: 1em;
+        font-weight: bold;
+    }
+}
+
 footer {
-    padding: 60px 40px 40px 40px;
+    padding: 55px 40px 40px 40px;
 }
 
 #linkFooter {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
     p {
         color: white;
     }
