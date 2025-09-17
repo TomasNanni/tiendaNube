@@ -1,48 +1,136 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
-a{
-	text-decoration: none;
+
+a {
+    text-decoration: none;
 }
 
 
@@ -57,7 +145,7 @@ a{
     background-color: var(--primary-color);
     width: 100%;
     box-sizing: border-box;
-    padding-bottom: 2.5em;
+    padding-bottom: 5em;
 
     * {
         color: white;
@@ -68,7 +156,8 @@ a{
     background-color: var(--secondary-color);
     width: 100%;
     box-sizing: border-box;
-    padding-bottom: 2.5em;
+    padding-bottom: 5em;
+    padding-top: 2em;
 }
 
 .navItems {
@@ -104,11 +193,11 @@ a{
         max-width: 450px;
     }
 
-    h2{
+    h2 {
         font-size: 21px;
     }
 
-    h3{
+    h3 {
         font-size: 14px;
     }
 
@@ -138,7 +227,7 @@ a{
 
 .containerSpaceAround {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-content: center;
     align-items: center;
     justify-content: space-around;
@@ -152,12 +241,12 @@ a{
     justify-content: space-evenly;
 }
 
-.containerCenter{
+.containerCenter {
     display: flex;
     flex-wrap: nowrap;
     align-content: center;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
 }
 
 .containerCenterText {
@@ -170,17 +259,27 @@ a{
     font-weight: bold;
 }
 
-.seccion6{
-    *{
+.containerSpaceBetween {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seccion6 {
+    * {
         padding: 30px;
     }
-    a{
+
+    a {
         margin-left: 2em;
     }
-    h2{
+
+    h2 {
         font-weight: bold;
     }
-    p{
+
+    p {
         font-size: 18px;
         padding-top: 10px;
     }
@@ -196,7 +295,8 @@ a{
     text-align: left;
     min-width: 400px;
     min-height: 275px;
-    svg{
+
+    svg {
         width: 32px;
         height: 32px;
         color: #4b5fA0;
@@ -219,7 +319,7 @@ a{
         margin: 0;
     }
 
-    a{
+    a {
         display: inline-block;
         margin-top: 6em;
     }
@@ -230,7 +330,7 @@ a{
     gap: 24px;
 }
 
-.linksEstandares{
+.linksEstandares {
     font-size: 14px;
     cursor: pointer;
     color: #0050c3;
@@ -239,38 +339,84 @@ a{
 }
 
 .circuloCeleste {
-  width: 24px;
-  height: 24px;
-  background-color: rgba(0,80,195, 0.15);
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+    width: 24px;
+    height: 24px;
+    background-color: rgba(0, 80, 195, 0.15);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.listaVentajas{
-    li{
-        gap: 10px;
+.circuloBlanco {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: #0050c3 1px solid;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.listaVentajas {
+    li {
         padding: 8px 8px 8px 8px;
     }
-    *{
+
+    * {
         padding: 5px;
-        font-size: 18px;
     }
-    h2{
+
+    h2 {
         font-size: 32px;
         font-weight: bold;
     }
-    a{
+
+    a {
         padding: 10px;
     }
-    svg{
+
+    svg {
         padding: 0;
-        color: #4b5fA0;;
+        color: #4b5fA0;
+        ;
     }
-    ul{
+
+    ul {
         padding-bottom: 25px;
     }
+
+    h3 {
+        display: inline;
+    }
+}
+
+#divSeccionTarjetas {
+    padding: 8em 8em 5em 8em;
+}
+
+.tarjetaTestimonio {
+    border-radius: 16px;
+    background-color: white;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 30px 70px 30px;
+    h2{
+        font-size: 24px;
+        color:#171E43;
+    }
+    p{
+        font-size: 18px;
+        color:#171E43
+    }
+    position: relative;
+}
+
+.containerPersona{
+    position: absolute;
+    bottom: 20px;
 }
 
 #header {
@@ -289,13 +435,14 @@ h2 {
     font-size: 32px;
 }
 
-h3{
+h3 {
     font-size: 24px;
 }
 
 nav {
     display: flex;
     justify-content: space-around;
+
     div {
         padding: 25px;
     }
@@ -335,11 +482,11 @@ body {
     cursor: pointer;
 }
 
-#input{
+#input {
     color: black;
 }
 
-.botonCrearTiendaGratis:hover{
+.botonCrearTiendaGratis:hover {
     color: var(--primary-color);
     background-color: white;
     border: 1px blue solid;
@@ -350,10 +497,11 @@ body {
     background-color: white;
 }
 
-#textoSeccion7{
+#textoSeccion7 {
     display: flex;
     align-items: flex-start;
-    h2{
+
+    h2 {
         margin-top: 1em;
         font-weight: bold;
     }
@@ -367,6 +515,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
     p {
         color: white;
     }
